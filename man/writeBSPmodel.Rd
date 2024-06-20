@@ -4,10 +4,12 @@
 \alias{writeBSPmodel}
 \title{Title}
 \usage{
-writeBSPmodel(rprior = 0.2000379)
+writeBSPmodel(rprior = 0.2000379, split = FALSE)
 }
 \arguments{
 \item{rprior}{}
+
+\item{split}{}
 }
 \description{
 Title
