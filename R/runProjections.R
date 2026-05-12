@@ -30,9 +30,7 @@ Fproj <- t(apply(Fp, 1, function(x) {
     l80 = quantile(x, 0.10),
     u80 = quantile(x, 0.90))
 }))
-Bmsy=median(output$BMSY)
-Fmsy=median(output$FMSY)
-return(list(Bproj=Bproj,Fproj=Fproj,Bmsy=Bmsy,Fmsy=Fmsy))
+return(list(Bproj=Bproj,Fproj=Fproj))
 
 }
 
