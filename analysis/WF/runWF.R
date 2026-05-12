@@ -17,18 +17,18 @@ mod1Proj2=runProjections(nY=nYproj,output=mod1Run,Yield=c(0.4,0.5,0.6,0.6)) #out
 
 Byplus1=as.numeric(mod1Proj1$Bproj[1,1])
 
-#RMSE::fnCall(fnName='Flinear',Bt=Byplus1,Blim=mod1Out$Blim,Btrigger=mod1Out$Btrigger,Ftarget=mod1Out$Ftarget,x50=x50)
-# 
-# WF_PAleaf <- RMSE::plotLeafStock(
-#   Blim = mod1Out$Blim,
-#   Btrigger = mod1Out$Btrigger,
-#   Ftarget = mod1Out$Ftarget,
-#   x50UL = 0.25,
-#   x50ML = 0.5,
-#   x50LL = 0.75,
-#   Fmin = 0.0001,
-#   stockval=mod1Out$Bterminal,
-#   stockF=mod1Out$Fterminal); WF_PAleaf
-# 
+Fval=fnCall(fnName='Flinear',Bt=Byplus1,Blim=mod1Out$Blim,Btrigger=mod1Out$Btrigger,Ftarget=mod1Out$Ftarget,x50=x50)
+
+WF_PAleaf <- plotLeafStock(
+  Blim = mod1Out$Blim,
+  Btrigger = mod1Out$Btrigger,
+  Ftarget = mod1Out$Ftarget,
+  x50UL = 0.25,
+  x50ML = 0.5,
+  x50LL = 0.75,
+  Fmin = 0.0001,
+  stockval=mod1Out$Bterminal,
+  stockF=mod1Out$Fterminal); WF_PAleaf
+
 
 

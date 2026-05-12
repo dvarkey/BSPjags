@@ -5,7 +5,7 @@
 #' @param Ct scalar. Current level of catches from which to calculate next year biomass
 #' @param r scalar. Growth rate
 #' @param K scalar. Carrying capacity
-#' @references Copied from Rajeev and Divya's RMSE package
+#' @references copied from Kumar and Varkey RMSE package
 #' 
 #' @return scalar. Biomass in next year
 #' @export

@@ -22,5 +22,5 @@ scalar. Biomass in next year
 Calculate biomass in next year using estimated carrying capacity and growth rate
 }
 \references{
-Copied from Rajeev and Divya's RMSE package
+copied from Kumar and Varkey RMSE package
 }
