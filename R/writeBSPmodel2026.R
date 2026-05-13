@@ -191,7 +191,7 @@ p.smaller.cabf[i] <- step(log(Icabf[i])-log(Icabf.rep[i]))
 } 
     "
 
-WF_model=paste (part1,rval,part2,sep='\n')
+WF_model=paste (part1,rval,sep='\n')
 
 return(WF_model)
 }
