@@ -14,10 +14,11 @@ writeBSPmodel2026 <- function(rprior=0.2000379,split=FALSE){
   part1 =  "model
 {
 
-#prior for r based on info from swain
-r ~ dlnorm(-1.763,3.252)
-# prior distribution of K based on EPP 100,30 
+#prior for r based on info from swain"
+  
+  part2= "# prior distribution of K based on EPP 100,30 
 K~dlnorm(4.562,11.6)
+
 
 
 # prior distribution of q's
@@ -191,7 +192,7 @@ p.smaller.cabf[i] <- step(log(Icabf[i])-log(Icabf.rep[i]))
 } 
     "
 
-WF_model=paste (part1,rval,sep='\n')
+WF_model=paste (part1,rval,part2,sep='\n')
 
 return(WF_model)
 }
